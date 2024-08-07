@@ -13,6 +13,10 @@
 		background: #f8f8f8;
 	}
 
+	.WrapWebsite {
+		padding: 50px 50px 0px 50px;
+	}
+
 	/* Header Section */
 	.Header {
 		/* display: flex;
@@ -66,15 +70,33 @@
 		color: #626262;
 	}
 
+	.SearchContainer{
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
 	.SearchBar {
 		height: 42px;
 		width: 900px;
+		padding-left: 35px;
 		font-family: "apercu", sans-serif;
 		font-size: medium;
 		background-color: #ededed;
 		color: black;
 		border-radius: 8px;
 		border: 1px solid #ededed;
+	}
+
+	.SearchBar::placeholder {
+		color: black;
+	}
+
+	.search-icon {
+		position: absolute;
+		left: 7px;
+		font-size: 16px;
+		color: #aaa;
 	}
 
 	/* Wrap Log in and Sign Up buttons */
@@ -131,6 +153,14 @@
 		font-weight: 900;
 		font-size: 200px;
 		margin-top: 0px;
+		text-align: center;
+		width: 1800px;
+	}
+	
+	#ASAP {
+		font-family: "apercu", sans-serif;
+		font-weight: 100;
+		font-size: 16px;
 	}
 
 	/* Organise Welcome Message and Contact Us Form */
@@ -181,7 +211,7 @@
 		font-size: 13px;
 		font-weight: 250;
 		color: #aaaaaa;
-		line-height: 25px;
+		line-height: 29px;
 	}
 
 	.InputBox {
@@ -192,6 +222,18 @@
 		background-color: #fff;
 		color: #222;
 		border: none;
+		margin-bottom: 10px;
+	}
+
+	/* Dropdown Menu */
+	.dropdown{
+		height: 42px;
+		width: 700px;
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		background-color: #fff;
+		color: #222;
+		border: 1px solid #fff;
 		margin-bottom: 10px;
 	}
 
@@ -228,8 +270,12 @@
 		color: #222;
 	}
 
-	/* Try to reformat later */
-	/* .CheckboxButton::after {
+	.Checkbox {
+		margin-top: 25px;
+	}
+
+	/* Try to reformat */
+	/* .Checkbox::after {
 		height: 20px;
 		width: 20px;
 		display: inline-block;
@@ -252,12 +298,18 @@
 	}
 
 	.tncFinePrint {
-		margin-top: 50px;
+		margin-top: 70px;
 		color: #aaaaaa;
 		font-weight: lighter;
 	}
 
-	/* Navigation Menu */
+	/* Footer Navigation Menu */
+	.FooterNavWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	.NavigationMenu {
 		display: flex;
 		flex-direction: row;
@@ -283,6 +335,83 @@
 
 	.NavigationLinks:hover {
 		color: #626262;
+	}
+
+	.ConferenceWrapper {
+		height: 90px;
+		line-height: 62px;
+		width: 320px;
+		text-align: center;
+		border: 1px solid #fff;
+		background-color: #fff;
+		border-radius: 8px;
+		margin: 250px 30px 100px 30px;
+	}
+
+	.Conference {
+		font-size: 16px;
+		font-weight:lighter;
+		color: #222;
+	}
+
+	.ConferenceLink {
+		font-size: 16px;
+		font-weight:bold;
+		text-decoration: underline;
+		color: #222;
+	}
+
+	.calendar-icon {
+		vertical-align: middle;
+		font-size: 16px;
+		margin: 0 8px;
+	}
+	
+	/* Footer Section */
+	.FooterSection {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 150px;
+		margin: 0 50px 0 50px;
+		border-top: 1px dotted #222;
+		color: #222;
+		font-size: 14px;
+		font-family: "apercu", sans-serif;
+	}
+
+	.FooterTNC {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 400px;
+		margin-top: 50px;
+	}
+
+	.SocialMedia {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 800px;
+		margin-top: 50px;
+	}
+
+	.FooterLinks {
+		color: #222;
+		font-size: 14px;
+	}
+
+	.FooterFont {
+		color: #222;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.FooterImage {
+		height: 14px;
+		width: auto;
 	}
 
 	code {
