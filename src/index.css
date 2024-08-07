@@ -1,13 +1,290 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+	@font-face {
+		font-family: "apercu";
+		src: url("Apercu Regular.otf");
+		src: url("Apercu Light.otf");
+		src: url("Apercu Bold.otf");
+	}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+	body {
+		margin: 0;
+		font-family: "apercu", sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		background: #f8f8f8;
+	}
+
+	/* Header Section */
+	.Header {
+		/* display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center; */
+		font-family: "apercu", sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		/* background: #f8f8f8; */
+		color: #222;
+		line-height: 200%;
+		padding: 20px 0 20px 0;
+	}
+
+	.HeaderWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 50px 0 50px;
+	}
+
+	.Logo {
+		width: 30px;
+		height: 16px;
+	}
+
+	/* Wrap Navigation Buttons */
+	.HeaderDirectory {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: end;
+		margin-inline: 60px 0px;
+	}
+
+	/* Format Buttons */
+	.NavigationButtons {
+		margin-left: 10px;
+		margin-inline: 10px 0px;
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		font-weight: bold;
+		background-color: #f8f8f8;
+		color: #222;
+		border: #f8f8f8;
+	}
+
+	.NavigationButtons:hover {
+		color: #626262;
+	}
+
+	.SearchBar {
+		height: 42px;
+		width: 900px;
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		background-color: #ededed;
+		color: black;
+		border-radius: 8px;
+		border: 1px solid #ededed;
+	}
+
+	/* Wrap Log in and Sign Up buttons */
+	.BecomeMember {
+		display: flex;
+		justify-content: center;
+	}
+
+	.BeProButton {
+		height: 48px;
+		width: fit-content;
+		margin-right: 10px;
+		padding: 0 20px 0 20px;
+		font-size: medium;
+		background-color: #222;
+		color: #fff;
+		border-radius: 8px;
+		border: 1px solid #222;
+	}
+
+	.SubmitWebsiteButton {
+		height: 48px;
+		width: fit-content;
+		padding: 0 20px 0 20px;
+		font-size: medium;
+		background-color: #fff;
+		color: #222;
+		border-radius: 8px;
+		border: 1px solid #222;
+	}
+
+	.SubmitWebsiteButton:hover {
+		background-color: #222;
+		color: #fff;
+	}
+
+	/* Introduction to Contact Us Form */
+	.Title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#GetInTouch {
+		font-family: "apercu", sans-serif;
+		font-weight: 100;
+		font-size: 16px;
+		margin: 50px 0 0 0;
+	}
+
+	#Contact {
+		font-family: "apercu", sans-serif;
+		font-weight: 900;
+		font-size: 200px;
+		margin-top: 0px;
+	}
+
+	/* Organise Welcome Message and Contact Us Form */
+	.FormSection {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: start;
+		text-align: left;
+		padding: 0 280px 0 280px;
+	}
+
+	/* Contact Form Welcome Message */
+	.WelcomeMessage {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		width: 50%;
+		margin-right: 20px;
+	}
+
+	#WelcomeTitle{
+		font-family: "apercu", sans-serif;
+		font-size: 23px;
+		width: 450px;
+		line-height: 30px;
+	}
+
+	#WelcomeSubtitle{
+		font-family: "apercu", sans-serif;
+		font-size: 15px;
+		width: 500px;
+		line-height: 30px;
+	}
+
+	/* Contact Form */
+	.Form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 50%;
+	}
+
+	.InputTitle {
+		font-family: "apercu", sans-serif;
+		font-size: 13px;
+		font-weight: 250;
+		color: #aaaaaa;
+		line-height: 25px;
+	}
+
+	.InputBox {
+		height: 42px;
+		width: 700px;
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		background-color: #fff;
+		color: #222;
+		border: none;
+		margin-bottom: 10px;
+	}
+
+	::placeholder {
+		color: #aaaaaa;
+	}
+
+	textarea {
+		height: 150px;
+		width: 700px;
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		background-color: #fff;
+		color: #222;
+		border: none;
+	}
+
+	/* Terms and Condition */
+	a:link { 
+		text-decoration: none; 
+	} 
+	a:visited { 
+		text-decoration: none; 
+	} 
+	a:hover { 
+		text-decoration: none; 
+	} 
+	a:active { 
+		text-decoration: none; 
+	}
+	
+	.tnc {
+		font-weight: bold;
+		color: #222;
+	}
+
+	/* Try to reformat later */
+	/* .CheckboxButton::after {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		border-radius: 10px;
+		border: 1px solid #aaaaaa;
+		background-color: #ededed;
+	} */
+
+	.SendMsgButton {
+		height: 48px;
+		width: fit-content;
+		margin-right: 10px;
+		padding: 0 20px 0 20px;
+		font-size: medium;
+		font-family: "apercu", sans-serif;
+		background-color: #222;
+		color: #fff;
+		border-radius: 8px;
+		border: 1px solid #222;
+	}
+
+	.tncFinePrint {
+		margin-top: 50px;
+		color: #aaaaaa;
+		font-weight: lighter;
+	}
+
+	/* Navigation Menu */
+	.NavigationMenu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 1000px;
+		margin: 250px 30px 100px 30px;
+	}
+
+	.NavigationCol {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		list-style: none;
+		line-height: 40px;
+	}
+
+	.NavigationLinks {
+		font-family: "apercu", sans-serif;
+		font-size: medium;
+		font-weight: bold;
+		color: #222;
+	}
+
+	.NavigationLinks:hover {
+		color: #626262;
+	}
+
+	code {
+		font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	}

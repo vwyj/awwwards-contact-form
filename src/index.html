@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<div class="Header">
+			<!-- Wrap elements in Header -->
+			<div class="HeaderWrapper">
+				<img class="Logo" src="./resources/awwwardsLogo.png" alt="logo">
+				<!-- Header Navigation Section -->
+				<div class="HeaderDirectory">
+					<a class="NavigationButtons" href="#"> Button</a>
+					<a class="NavigationButtons" href="https://www.awwwards.com/directory/">Directory</a>
+					<a class="NavigationButtons" href="https://www.awwwards.com/academy/">Academy</a>
+					<a class="NavigationButtons" href="https://conference.awwwards.com/">Conferences</a>
+					<a class="NavigationButtons" href="https://www.awwwards.com/jobs/">Jobs</a>
+				</div>
+
+				<div>
+					<input class="SearchBar" type="text" placeholder="Search by Inspiration"/>
+				</div>
+
+				<!-- Become a Member Header Section -->
+				<div class="BecomeMember">
+					<a class="NavigationButtons">Log in</a>
+					<a class="NavigationButtons">Sign Up</a>
+				</div>
+
+				<!-- Header Section Buttons -->
+				<div>
+					<button class="BeProButton">Be Pro</button>
+					<button class="SubmitWebsiteButton">Submit Website</button> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Us Introduction -->
+		<div class="Title">
+			<h1 id="GetInTouch">Get in touch</h1>
+			<h2 id="Contact">CONTACT US</h2>
+		</div>
+
+		<!-- Form Section -->
+		<div class="FormSection">
+			<!-- Form Introduction -->
+			<div class="WelcomeMessage">
+				<h2 id="WelcomeTitle">We are awwwards and we are here to serve! How can we help you?</h2>
+				<p id="WelcomeSubtitle">If you have any questions about your submission, directory, billing, courses or anything else awwwards related, we’re here to help!</p>
+			</div>
+
+			<!-- Form -->
+			<div class="Form">
+				<form action="/">
+					<label class="InputTitle" for="name">NAME (*)</label>
+					<input class="InputBox" type="text" id="name" name="name" required />
+					<label class="InputTitle" for="email">E-MAIL (*)</label>
+					<input class="InputBox" type="email" id="email" name="email" required />
+					<label class="InputTitle" for="website">WEBSITE</label>
+					<input class="InputBox" type="text" id="website" name="website" placeholder="Add a URL with http://"/>
+					<label class="InputTitle">WHAT'S UP (*)</label>
+					<!-- <option value=""> -->
+					<label class="InputTitle" for="comment">COMMENT (*)</label>
+					<textarea class="CommentBox" required></textarea>
+					<label>
+						<input class="CheckboxButton" type="checkbox" required/>
+						I have read and accepted the 
+							<a class="tnc" 
+							href="https://www.awwwards.com/terms/" 
+							target="_blank">
+							Terms and Conditions
+							</a> and 
+							<a class="tnc" 
+							href="https://www.awwwards.com/privacy-policy/" 
+							target="_blank">
+							Privacy Policy
+							</a>
+					</label>
+					<h5 class="tncFinePrint">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h5>
+					<button class="SendMsgButton">SEND MESSAGE</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer Navigation Section -->
+		<div class="NavigationMenu">
+			<div class="NavigationCol">
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/websites/">Websites</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/collections/search/">Collections</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/elements/">Elements</a></li>
+			</div>
+			<div class="NavigationCol">
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/academy/">Academy</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/jobs/search/">Jobs</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/market/">Market</a></li>
+			</div>
+			<div class="NavigationCol">
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/directory/search/">Directory</a></li>
+				<li><a class="NavigationLinks" href="https://conference.awwwards.com/">Conferences</a></li>
+			</div>
+			<div class="NavigationCol">
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/faqs/">FAQs</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/about-us/">About Us</a></li>
+				<li><a class="NavigationLinks" href="https://www.awwwards.com/contact-us/">Contact Us</a></li>
+			</div>
+		</div>
+
+		<!-- <script src="script.js"></script> -->
+	</body>
+</html>
